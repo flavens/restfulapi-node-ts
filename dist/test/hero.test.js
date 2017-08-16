@@ -1,8 +1,7 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const chai = require("chai");
 const chaiHttp = require("chai-http");
-const App_1 = require("../../src/App");
+const App_1 = require("../src/App");
 chai.use(chaiHttp);
 const expect = chai.expect;
 describe('GET api/v1/heroes', () => {
