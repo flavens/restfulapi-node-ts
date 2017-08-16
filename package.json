@@ -4,7 +4,9 @@
   "description": "Following the tutorial of M: Herman (https://goo.gl/BEhLK9)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp",
+    "gulp-watch": "gulp watch"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,11 @@
   },
   "homepage": "https://github.com/flavens/restfulapi-node-ts#readme",
   "devDependencies": {
-    "typescript": "^2.0.6"
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^3.1.1",
+    "typescript": "^2.4.2"
+  },
+  "dependencies": {
+    "graceful-fs": "^4.1.11"
   }
 }
