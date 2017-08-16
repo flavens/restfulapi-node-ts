@@ -4,9 +4,10 @@
   "description": "Following the tutorial of M: Herman (https://goo.gl/BEhLK9)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "gulp",
-    "gulp-watch": "gulp watch"
+    "gulp-watch": "gulp watch",
+    "start": "node dist/index.js",
+    "test": "mocha --reporter spec --compilers ts:ts-node/register 'test/**/*.test.ts'"
   },
   "repository": {
     "type": "git",
@@ -20,11 +21,27 @@
   },
   "homepage": "https://github.com/flavens/restfulapi-node-ts#readme",
   "devDependencies": {
+    "@types/body-parser": "0.0.33",
+    "@types/chai": "^3.5.2",
+    "@types/chai-http": "0.0.29",
+    "@types/debug": "0.0.29",
+    "@types/express": "^4.0.36",
+    "@types/mocha": "^2.2.41",
+    "@types/morgan": "^1.7.32",
+    "@types/node": "^6.0.86",
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
     "gulp": "^3.9.1",
-    "gulp-typescript": "^3.1.1",
+    "gulp-typescript": "^3.2.1",
+    "mocha": "^3.5.0",
+    "ts-node": "^1.7.3",
     "typescript": "^2.4.2"
   },
   "dependencies": {
-    "graceful-fs": "^4.1.11"
+    "body-parser": "^1.17.2",
+    "debug": "^2.6.8",
+    "express": "^4.15.4",
+    "graceful-fs": "^4.1.11",
+    "morgan": "^1.8.2"
   }
 }
